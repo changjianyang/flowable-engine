@@ -19,7 +19,7 @@
       "type" : "String",
       "title" : "Id",
       "value" : "",
-      "description" : "Unique identifier of the element.",
+      "description" : "唯一标识",
       "popular" : true
     } ]
   }, {
