@@ -20,7 +20,7 @@ import org.flowable.common.engine.api.FlowableObjectNotFoundException;
 
 /**
  * Helper for changing the state of a process instance.
- *
+ * <p>
  * An instance can be obtained through {@link org.flowable.engine.RuntimeService#createChangeActivityStateBuilder()}.
  *
  * @author Tijs Rademakers
@@ -29,6 +29,7 @@ public interface ChangeActivityStateBuilder {
 
     /**
      * Set the id of the process instance
+     * 设置流程实例id
      **/
     ChangeActivityStateBuilder processInstanceId(String processInstanceId);
 
@@ -104,11 +105,10 @@ public interface ChangeActivityStateBuilder {
 
     /**
      * Start the process instance
+     * 开始节点的撤销功能
      *
-     * @throws FlowableObjectNotFoundException
-     *             when no process instance is found
-     * @throws FlowableException
-     *             activity could not be canceled or started
+     * @throws FlowableObjectNotFoundException when no process instance is found
+     * @throws FlowableException               activity could not be canceled or started
      **/
     void changeState();
 
